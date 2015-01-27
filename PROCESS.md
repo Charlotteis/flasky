@@ -10,3 +10,6 @@
 - pip3 install flask-bootstrap
 - import bootstrap into app
 - implement pretty bootstrap user template
+- Make all templates inherit from base, which inherits from bootstrap base
+- Simply all non-base templates
+- Add 404 and 500 templates
