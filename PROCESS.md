@@ -19,3 +19,7 @@
 - pip install flask-moment (moment.js)
 - import flask-moment into app
 - display UTC time converted into local time in index template
+
+- pip install flask-wtf
+- add really basic secret key to enable CSRF protection for flask-wtf to work
+- import flask-wtf form and wtform fields and validators into app

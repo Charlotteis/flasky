@@ -1,9 +1,17 @@
 from datetime import datetime
 from flask import Flask, render_template
+
 from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
+
+from flask.ext.form import Form
+from wtforms import StringField, SubmitField
+from wtforms.validators import Required
+
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "hard to guess string"
+
 manager = Manager(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
