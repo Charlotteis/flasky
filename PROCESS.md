@@ -35,3 +35,7 @@
 - Add db to .gitignore
 - work with database in index view
 - add database imports to shell using manager command
+
+- pip3 install flask-migrate
+- import migrate into app
+- add manager command for db migration

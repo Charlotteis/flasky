@@ -6,6 +6,7 @@ from flask.ext.script import Manager, Shell
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
 from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.migrate import Migrate, MigrateCommand
 
 from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField
@@ -23,6 +24,7 @@ db = SQLAlchemy(app)
 manager = Manager(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
+migrate = Migrate(app, db)
 
 
 class NameForm(Form):
@@ -87,6 +89,7 @@ def make_shell_context():
     return dict(app=app, db=db, User=User, Role=Role)
 
 manager.add_command("shell", Shell(make_context=make_shell_context))
+manager.add_command("db", MigrateCommand)
 
 
 if __name__ == "__main__":
