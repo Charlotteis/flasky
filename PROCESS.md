@@ -26,3 +26,4 @@
 - create a basic form and include it in index.html
 - render form in index view
 - Implement redirects and user sessions to avoid form resubmission
+- flashed messages (?)
