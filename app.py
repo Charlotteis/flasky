@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, render_template
 from flask.ext.script import Manager
 app = Flask(__name__)
 manager = Manager(app)
@@ -6,14 +6,12 @@ manager = Manager(app)
 
 @app.route("/")
 def index():
-    user_agent = request.headers.get("User-Agent")
-    return "<p>Your browser is {0}<p>".format(user_agent)
+    return render_template("index.html")
 
 
 @app.route("/user/<name>")
 def user(name):
-    name = name.capitalize()
-    return "<h1>Hello, {0}</h1>".format(name)
+    return render_template("user.html", name=name)
 
 
 if __name__ == "__main__":
