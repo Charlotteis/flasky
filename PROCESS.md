@@ -33,3 +33,5 @@
 - Write database models
 - Add dummy data to db
 - Add db to .gitignore
+- work with database in index view
+- add database imports to shell using manager command
