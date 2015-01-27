@@ -7,3 +7,6 @@
 - Use Manager to run app with command-line arguments
 - Created templates folder and base, index and user templates.
 - Set view logic to only render templates, separating business and presentation logic
+- pip3 install flask-bootstrap
+- import bootstrap into app
+- implement pretty bootstrap user template
