@@ -2,3 +2,4 @@
 ----------
 - set up repo
 - pip3 install flask
+- Basic hello world application
