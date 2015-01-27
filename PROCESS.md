@@ -40,4 +40,5 @@
 - import migrate into app
 - add manager command for db migration
 - initialise a migration folder -> python3 app.py db init
-- create a migration script
+- create a migration script -> python3 app.py db migrate -m "message"
+- upgrade database -> python3 app.py db upgrade
