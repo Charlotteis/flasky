@@ -39,3 +39,5 @@
 - pip3 install flask-migrate
 - import migrate into app
 - add manager command for db migration
+- initialise a migration folder -> python3 app.py db init
+- create a migration script
