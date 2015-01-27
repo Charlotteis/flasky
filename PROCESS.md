@@ -42,3 +42,7 @@
 - initialise a migration folder -> python3 app.py db init
 - create a migration script -> python3 app.py db migrate -m "message"
 - upgrade database -> python3 app.py db upgrade
+
+- pip3 install flask-mail
+- configure app to send email through gmail account
+- uninstall flask-mail as not working
