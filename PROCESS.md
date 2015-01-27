@@ -24,3 +24,4 @@
 - add really basic secret key to enable CSRF protection for flask-wtf to work
 - import flask-wtf form and wtform fields and validators into app
 - create a basic form and include it in index.html
+- render form in index view
