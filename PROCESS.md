@@ -17,3 +17,4 @@
 - Add 404 and 500 templates
 
 - pip install flask-moment (moment.js)
+- import flask-moment into app
