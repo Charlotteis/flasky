@@ -16,14 +16,20 @@
 - Simply all non-base templates
 - Add 404 and 500 templates
 
-- pip install flask-moment (moment.js)
+- pip3 install flask-moment (moment.js)
 - import flask-moment into app
 - display UTC time converted into local time in index template
 
-- pip install flask-wtf
+- pip3 install flask-wtf
 - add really basic secret key to enable CSRF protection for flask-wtf to work
 - import flask-wtf form and wtform fields and validators into app
 - create a basic form and include it in index.html
 - render form in index view
 - Implement redirects and user sessions to avoid form resubmission
 - flashed messages (?)
+
+- pip3 install flask-sqlalchemy
+- import sqlalchemy into app & set database
+- Write database models
+- Add dummy data to db
+- Add db to .gitignore
