@@ -5,7 +5,7 @@ from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
 
-from flask.ext.form import Form
+from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField
 from wtforms.validators import Required
 
@@ -16,6 +16,10 @@ manager = Manager(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 
+
+class NameForm(Form):
+    name = StringField("What is your name?", validators=[Required()])
+    submit = SubmitField("Submit")
 
 @app.route("/")
 def index():
