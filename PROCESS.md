@@ -18,3 +18,4 @@
 
 - pip install flask-moment (moment.js)
 - import flask-moment into app
+- display UTC time converted into local time in index template
