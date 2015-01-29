@@ -112,3 +112,4 @@
 - pip3 install flask-pagedown markdown bleach
 - initialise pagedown
 - convert postform to use markdown
+- include pagedown script in index
