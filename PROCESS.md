@@ -91,3 +91,6 @@
 - add edit profile template
 - add gravatars to profiles
 - add gravatar hashing (md5 hashes are cpu intensive)
+
+- Beging to add Blog Posting capability
+- Add Post model
