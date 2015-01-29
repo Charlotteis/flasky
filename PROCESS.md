@@ -123,3 +123,4 @@
 - create follow and unfollow views
 - show followed posts on the home page
 - allow user to see all posts or just posts from those they have followed
+- ensure users are following themselves to ensure they see their own posts

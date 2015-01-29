@@ -78,6 +78,7 @@ class Post(db.Model):
 
 db.event.listen(Post.body, "set", Post.on_changed_body)
 
+
 class Follow(db.Model):
     __tablename__ = "follows"
     follower_id = db.Column(db.Integer, db.ForeignKey("users.id"),
@@ -85,6 +86,7 @@ class Follow(db.Model):
     followed_id = db.Column(db.Integer, db.ForeignKey("users.id"),
                             primary_key=True)
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
 
 class User(UserMixin, db.Model):
     __tablename__ = "users"
@@ -186,6 +188,14 @@ class User(UserMixin, db.Model):
             except IntegrityError:
                 db.session.rollback()
 
+    @staticmethod
+    def add_self_follows():
+        for user in User.query.all():
+            if not user.is_following(user):
+                user.follow(user)
+                db.session.add(user)
+                db.session.commit()
+
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
         if self.role is None:
@@ -197,6 +207,8 @@ class User(UserMixin, db.Model):
         if self.email is not None and self.avatar_hash is None:
             self.avatar_hash = hashlib.md5(
                 self.email.encode("utf-8")).hexdigest()
+
+        self.follow(self)
 
     def __repr__(self):
         return "<User {0}>".format(self.username)
