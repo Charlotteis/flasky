@@ -46,3 +46,11 @@
 - pip3 install flask-mail
 - configure app to send email through gmail account
 - uninstall flask-mail as not working
+
+- Begin restructuring application
+- create config.py file
+- create app folder, move templates and static into it
+- create app/main
+- create app/main/__init__.py
+- create blueprint for routes and error page handlers
+- restructure app into multiple files and folders
