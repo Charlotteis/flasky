@@ -94,3 +94,4 @@
 
 - Beging to add Blog Posting capability
 - Add Post model
+- Add Blog Post form
