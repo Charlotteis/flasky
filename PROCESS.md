@@ -75,3 +75,4 @@
 - add a user registration form
 - add user registration template
 - add registration link to login template
+- add registration view
