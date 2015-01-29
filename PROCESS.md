@@ -78,3 +78,4 @@
 - add registration view
 - update user model
 - add user role permission functions
+- add unit tests for roles and permission
