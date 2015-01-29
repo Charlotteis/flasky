@@ -65,3 +65,5 @@
 
 - create auth folder with views and templates
 - pip3 install flask-login (user authentication)
+- update user model with the flask-login user mixin
+- add email field to user model
