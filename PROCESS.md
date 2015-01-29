@@ -111,3 +111,4 @@
 - incorporate markdown into blog posts
 - pip3 install flask-pagedown markdown bleach
 - initialise pagedown
+- convert postform to use markdown
