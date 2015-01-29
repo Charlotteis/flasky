@@ -74,3 +74,4 @@
 - implement logout route
 - add a user registration form
 - add user registration template
+- add registration link to login template
