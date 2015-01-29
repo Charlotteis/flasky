@@ -116,3 +116,6 @@
 - make sure markdown posts sent are actually rendered back as markdown
 - add permanent links to blog posts
 - implement a blog post editor
+
+- Begin implementing ability to have "followers" and "follow" people.
+- add follow and followed db relationships
