@@ -121,3 +121,5 @@
 - add follow and followed db relationships
 - add follow button to profile pages
 - create follow and unfollow views
+- show followed posts on the home page
+- allow user to see all posts or just posts from those they have followed
