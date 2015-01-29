@@ -54,3 +54,8 @@
 - create app/main/__init__.py
 - create blueprint for routes and error page handlers
 - restructure app into multiple files and folders
+
+29/01/2914
+----------
+- set up basic test files
+- add test command to manage.py (move manage to right place)

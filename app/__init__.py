@@ -1,9 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
 from flask.ext.sqlalchemy import SQLAlchemy
 from config import config
-from main import main as main_blueprint
 
 bootstrap = Bootstrap()
 moment = Moment()
@@ -20,5 +19,6 @@ def create_app(config_name):
     db.init_app(app)
 
     # attach routes and custom error pages here
+    from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
     return app
