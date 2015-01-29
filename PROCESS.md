@@ -62,3 +62,5 @@
 
 - add password hashing to user model
 - add user model password tests
+
+- create auth folder with views and templates
