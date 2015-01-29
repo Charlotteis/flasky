@@ -82,3 +82,4 @@
 
 - start creating user profiles
 - add location, about, member_since and last_seen to user model
+- create user profile page view
