@@ -69,3 +69,4 @@
 - add email field to user model
 - initialise flask-login
 - create login form
+- create and render login form template
