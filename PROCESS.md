@@ -77,3 +77,4 @@
 - add registration link to login template
 - add registration view
 - update user model
+- add user role permission functions
