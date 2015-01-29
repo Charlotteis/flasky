@@ -105,3 +105,5 @@
 - add methods to generate fake users and blog posts in models
 - generate fake users and blog posts
 - add pagination to index view
+- add pagination macro
+- add pagination to index template
