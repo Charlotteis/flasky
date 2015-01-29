@@ -61,3 +61,4 @@
 - add test command to manage.py (move manage to right place)
 
 - add password hashing to user model
+- add user model password tests
