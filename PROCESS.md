@@ -98,3 +98,7 @@
 - Update index view to display posts and post form
 - Display posts in index template
 - add users list of posts to profile page
+
+- create fake blog post data automatically
+- pip3 install forgerpy
+- organise requirements into dev/prod/common
