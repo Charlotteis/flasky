@@ -119,3 +119,5 @@
 
 - Begin implementing ability to have "followers" and "follow" people.
 - add follow and followed db relationships
+- add follow button to profile pages
+- create follow and unfollow views
