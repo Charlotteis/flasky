@@ -54,3 +54,5 @@ docs/_build/
 target/
 
 data.sqlite
+data-test.sqlite
+data-dev.sqlite
