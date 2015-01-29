@@ -64,3 +64,4 @@
 - add user model password tests
 
 - create auth folder with views and templates
+- pip3 install flask-login (user authentication)
