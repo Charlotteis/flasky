@@ -107,3 +107,6 @@
 - add pagination to index view
 - add pagination macro
 - add pagination to index template
+
+- incorporate markdown into blog posts
+- pip3 install flask-pagedown markdown bleach
