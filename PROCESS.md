@@ -71,3 +71,4 @@
 - create login form
 - create and render login form template
 - implement form submission functions in login view
+- implement logout route
