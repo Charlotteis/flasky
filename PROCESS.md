@@ -96,3 +96,4 @@
 - Add Post model
 - Add Blog Post form
 - Update index view to display posts and post form
+- Display posts in index template
