@@ -84,3 +84,7 @@
 - add location, about, member_since and last_seen to user model
 - create user profile page view
 - update user profile template
+
+- start creating way for user to edit their profiles
+- create edit profile form
+- create edit profile view
