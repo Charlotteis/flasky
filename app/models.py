@@ -71,6 +71,10 @@ class User(UserMixin, db.Model):
     def is_administrator(self):
         return self.can(Permission.ADMINISTER)
 
+    def ping(self):
+        self.last_seen = datetime.utcnow()
+        db.session.add(self)
+
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
         if self.role is None:
