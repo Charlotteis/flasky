@@ -114,3 +114,4 @@
 - convert postform to use markdown
 - include pagedown script in index
 - make sure markdown posts sent are actually rendered back as markdown
+- add permanent links to blog posts
