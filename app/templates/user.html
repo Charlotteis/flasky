@@ -24,4 +24,6 @@
         <img class="img-rounded profile-thumbnail"
             src="{{ user.gravatar(size=356) }}">
     </div>
+    <h3>Posts by {{ user.username }}</h3>
+    {% include "_posts.html" %}
 {% endblock %}
