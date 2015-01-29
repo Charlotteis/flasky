@@ -89,3 +89,4 @@
 - create edit profile form
 - create edit profile view
 - add edit profile template
+- add gravatars to profiles
