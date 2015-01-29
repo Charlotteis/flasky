@@ -21,5 +21,7 @@
             Member since {{ moment(user.member_since).format("L") }}.
             Last seen {{ moment(user.last_seen).fromNow() }}.
         </p>
+        <img class="img-rounded profile-thumbnail"
+            src="{{ user.gravatar(size=356) }}">
     </div>
 {% endblock %}

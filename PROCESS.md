@@ -90,3 +90,4 @@
 - create edit profile view
 - add edit profile template
 - add gravatars to profiles
+- add gravatar hashing (md5 hashes are cpu intensive)
