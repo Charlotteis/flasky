@@ -102,3 +102,5 @@
 - create fake blog post data automatically
 - pip3 install forgerpy
 - organise requirements into dev/prod/common
+- add methods to generate fake users and blog posts in models
+- generate fake users and blog posts
