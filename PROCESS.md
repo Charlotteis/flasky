@@ -134,3 +134,4 @@
 - Create comment form
 - Add comments support to Post view
 - Create comments template
+- Include comments in post template
