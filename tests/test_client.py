@@ -1,4 +1,5 @@
 import unittest
+import re
 from flask import url_for
 from app import create_app, db
 from app.models import User, Role
@@ -21,3 +22,29 @@ class FlaskClientTestCase(unittest.TestCase):
     def test_home_page(self):
         response = self.client.get(url_for("main.index"))
         self.assertTrue("Stranger" in response.get_data(as_text=True))
+
+    def test_register_and_login(self):
+        """Test whether user can register a new account and login with it"""
+
+        # Register the account
+        response = self.client.post(url_for("auth.register"), data={
+            "email": "meep@example.com",
+            "username": "meep",
+            "password": "cat",
+            "password2": "cat",
+        })
+        self.assertTrue(response.status_code == 302)
+
+        # Login with the account
+        response = self.client.post(url_for("auth.login"), data={
+            "email": "charlotteis@example.com",
+            "password": "cat"
+        }, follow_redirects=True)
+        data = response.get_data(as_text=True)
+        self.assertTrue(re.search("Hello,\s+meep!", data))
+
+        # Logout of the account
+        response = self.client.get(url_for("auth.logout"),
+                                   follow_redirects=True)
+        data = response.get_data(as_text=True)
+        self.assertTrue("You have been logged out" in data)
