@@ -132,3 +132,4 @@
 - Create Comment model
 - Set one to many db relationship from users and posts to comments
 - Create comment form
+- Add comments support to Post view
