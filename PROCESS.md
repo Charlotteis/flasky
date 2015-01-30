@@ -141,3 +141,6 @@
 - pip3 install coverage
 - add coverage to manager
 - work with flask test client
+
+- Begin end-to-end testing with Selenium
+- pip3 install selenium
