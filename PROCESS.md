@@ -135,3 +135,7 @@
 - Add comments support to Post view
 - Create comments template
 - Include comments in post template
+- Ignore comment moderation
+
+- Begin exploring unit tests in more depth
+- pip3 install coverage
