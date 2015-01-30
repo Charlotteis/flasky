@@ -144,3 +144,4 @@
 
 - Begin end-to-end testing with Selenium
 - pip3 install selenium
+- add selenium set up and tear down classes and methods
