@@ -1,5 +1,6 @@
 import unittest
 import threading
+import re
 
 from flask import create_app, db
 from selenium import webdriver
@@ -67,3 +68,24 @@ class SeleniumTestCase(unittest.TestCase):
 
     def teardown(self):
         pass
+
+    def test_admin_home_page(self):
+        # Navigate to home page
+        self.client.get("http://localhost:5000/")
+        self.asserTrue(re.search("Hello,\s+Stranger !",
+                                 self.client.page_source))
+
+        # Navigate to login page
+        self.client.find_element_by_link_text("Log In").click()
+        self.asserTrue("<h1>Login</h1>" in self.client.page_source)
+
+        # Login
+        self.client.find_element_by_name("email").\
+            send_keys("john@example.com")
+        self.client.find_element_by_name("password").send_keys("cat")
+        self.client.find_element_by_name("submit").click()
+        self.asserTrue(re.search("Hello,\s+john !", self.client.page_source))
+
+        # Navigate to users profile page
+        self.client.find_element_by_link_text("Profile").click()
+        self.asserTrue("<h1>john</h1>" in self.client.page_source)
