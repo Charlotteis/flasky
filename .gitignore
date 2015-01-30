@@ -53,7 +53,11 @@ docs/_build/
 # PyBuilder
 target/
 
+# Database stuff
 data.sqlite
 data-test.sqlite
 data-dev.sqlite
 data-dev.sqlite-journal
+
+# Unit Test / coverage reports
+tmp/

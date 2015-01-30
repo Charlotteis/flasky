@@ -139,3 +139,4 @@
 
 - Begin exploring unit tests in more depth
 - pip3 install coverage
+- add coverage to manager
