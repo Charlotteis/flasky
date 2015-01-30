@@ -124,3 +124,9 @@
 - show followed posts on the home page
 - allow user to see all posts or just posts from those they have followed
 - ensure users are following themselves to ensure they see their own posts
+
+30/01/2015
+----------
+
+- Begin implementing user comments system
+- Create Comment model
