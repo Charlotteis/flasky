@@ -50,6 +50,7 @@ class Post(db.Model):
     body_html = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+    comments = db.relationship("Comment", backref="post", lazy="dynamic")
 
     @staticmethod
     def generate_fake(count=100):
@@ -111,6 +112,7 @@ class User(UserMixin, db.Model):
                                 foreign_keys=[Follow.followed_id],
                                 backref=db.backref("followed", lazy="joined"),
                                 cascade="all, delete-orphan")
+    comments = db.relationship("Comment", backref="author", lazy="dynamic")
 
     @property
     def password(self):

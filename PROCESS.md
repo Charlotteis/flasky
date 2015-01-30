@@ -130,3 +130,4 @@
 
 - Begin implementing user comments system
 - Create Comment model
+- Set one to many db relationship from users and posts to comments
